@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epic Moments - Reservas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Epic Moments</h1>
+      <div class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="galeria.html">Galería</a>
+        <a href="testimonios.html">Testimonios</a>                                              
+        <a href="reservas.html" class="activo">Reservas</a>
+        <a href="contacto.html">Contacto</a>
+       
+      </div>
+    </nav>
+  </header>
+
+  <section class="seccion">
+    <h2>Reserva tu Evento</h2>
+    <p class="intro">
+      Queremos que tu evento sea único. Completa el formulario y nuestro equipo se pondrá en contacto contigo
+      para personalizar cada detalle.
+    </p>
+
+    <div class="reservas-grid">
+
+      <form action="#" method="post" class="form-reservas">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@email.com" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" required>
+
+        <label for="tipo">Tipo de evento:</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">-- Selecciona --</option>
+          <option value="boda">Boda</option>
+          <option value="empresarial">Empresarial</option>
+          <option value="fiesta privada">Fiesta privada</option>
+          <option value="produccio audiovisual">Producción audiovisual</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="fecha">Fecha del evento:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="detalles">Detalles adicionales:</label>
+        <textarea id="detalles" name="detalles" rows="4" placeholder="Cuéntanos tu idea..."></textarea>
+
+        <button type="submit" class="btn">Enviar Reserva</button>
+      </form>
+      
+
+  

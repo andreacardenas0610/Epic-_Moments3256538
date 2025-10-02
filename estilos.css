@@ -1,0 +1,428 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d0d0d; 
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #d4af37; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.seccion {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ====== NAVBAR ====== */
+header {
+  background: #1a1a1a; 
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  color: #d4af37; 
+  margin: 0;
+}
+
+.menu a {
+  color: #f2f2f2; 
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #f5d76e; 
+}
+
+/* ====== HERO ====== */
+.hero {
+  background: url("IMG/fondo.jpeg") no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f2f2f2;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-texto {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #d4af37; 
+  color: #000;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #f5d76e; 
+  transform: scale(1.05);
+}
+
+/* ====== SERVICIOS ====== */
+.card {
+  background: #1a1a1a; 
+  border: 1px solid #d4af37; 
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: transform 0.3s, border 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #f5d76e; 
+}
+
+.card h3 {
+  color: #d4af37; 
+}
+
+/* ====== GALERÍA ====== */
+.galeria-grid img {
+  width: 100%;          
+  height: 250px;        
+  object-fit: cover;    
+  border-radius: 10px;  
+  border: 2px solid #d4af37; 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(212,175,55,0.4);
+}
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+
+
+/* ====== TESTIMONIOS ====== */
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+.seccion {
+  text-align: center;
+}
+
+.seccion ul {
+  list-style: none; 
+  padding: 0;
+  margin: 20px auto;
+  display: inline-block; 
+  text-align: left; 
+}
+
+.seccion ul li {
+  margin: 10px 0;
+}
+.seccion.cta {
+  text-align: center;
+}
+
+.seccion.cta .boton {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #d4af37; 
+  color: #000;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.seccion.cta .boton:hover {
+  background: #f5d76e; 
+  transform: scale(1.05);
+}
+
+blockquote {
+  background: #1a1a1a; 
+  padding: 20px;
+  border-left: 5px solid #d4af37; 
+  font-style: italic;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+blockquote:hover {
+  transform: scale(1.03);
+}
+
+cite {
+  display: block;
+  margin-top: 10px;
+  color: #f5d76e; 
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ====== CONTACTO ====== */
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #d4af37; 
+  border-radius: 6px;
+  background: #1a1a1a; 
+  color: #f2f2f2; 
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #aaa;
+}
+
+form button {
+  background: #d4af37; 
+  color: #000;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+  background: #f5d76e; 
+  transform: scale(1.05);
+}
+
+.info p {
+  margin: 10px 0;
+}
+/* ====== NOSOTROS ====== */
+.seccion {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.seccion p {
+  margin: 15px 0;
+}
+
+.seccion ul {
+  list-style: none; 
+  padding: 0;
+  margin: 20px auto;
+  display: inline-block; 
+  text-align: left; 
+}
+
+.seccion ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+
+/* ====== FOOTER ====== */
+/* ====== FOOTER ====== */
+footer {
+  background: #0d0d0d; /* negro principal */
+  color: #f2f2f2;      /* blanco suave */
+  padding: 40px 20px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h2.logo {
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+.footer-col h3 {
+  color: #f5d76e; /* dorado brillante */
+  margin-bottom: 15px;
+}
+
+.footer-col p,
+.footer-col a {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-col a {
+  color: #f2f2f2;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col a:hover {
+  color: #d4af37;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.redes a img {
+  width: 28px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.redes a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* ====== RESERVAS ====== */
+.reservas-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  align-items: start;
+}
+
+.form-reservas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #1a1a1a; 
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #d4af37; 
+}
+
+.form-reservas label {
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.form-reservas input,
+.form-reservas select,
+.form-reservas textarea {
+  padding: 10px;
+  border: 1px solid #d4af37;
+  border-radius: 6px;
+  background: #0d0d0d;
+  color: #f2f2f2;
+}
+
+.form-reservas input::placeholder,
+.form-reservas textarea::placeholder {
+  color: #aaa;
+}
+
+.form-reservas button {
+  background: #d4af37;
+  color: #000;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.form-reservas button:hover {
+  background: #f5d76e;
+  transform: scale(1.05);
+}
+
+
+.info-reservas {
+  background: #1a1a1a;
+  padding: 20px
+ }
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+}
